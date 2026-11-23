@@ -1,0 +1,17 @@
+
+# Dependencies
+**/node_modules/
+
+# Environment secrets
+server/.env
+.env
+
+# Build files
+client/dist/
+
+# Backup
+client-backup/
+
+# Logs
+*.log
+npm-debug.log*

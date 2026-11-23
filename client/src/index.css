@@ -1,0 +1,188 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, Arial, sans-serif;
+  background: #f3f6fb;
+  color: #172b4d;
+}
+
+button, input {
+  font: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: #185adb;
+  color: white;
+  padding: 13px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-top: 18px;
+}
+
+button:hover {
+  background: #1049bb;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 16px;
+}
+
+.panel {
+  width: 100%;
+  max-width: 760px;
+  background: white;
+  padding: 38px;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(20, 40, 80, 0.08);
+}
+
+.login-panel {
+  max-width: 460px;
+}
+
+.eyebrow {
+  color: #185adb;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 14px 0;
+}
+
+p {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+h3 {
+  margin: 24px 0 14px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 14px 0 7px;
+  font-weight: 600;
+}
+
+input {
+  border: 1px solid #d5dce8;
+  padding: 13px;
+  border-radius: 8px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #185adb;
+}
+
+.secondary {
+  background: #eaf0fb;
+  color: #185adb;
+}
+
+.secondary:hover {
+  background: #dce7fa;
+}
+
+.error {
+  color: #dc2626;
+  margin-top: 12px;
+}
+
+.result {
+  background: #f6f8fc;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 24px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #e2e8f0;
+  overflow-wrap: anywhere;
+}
+
+.dashboard-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.details-grid div {
+  background: #f6f8fc;
+  padding: 18px;
+  border-radius: 10px;
+  min-width: 0;
+}
+
+.details-grid small,
+.details-grid strong {
+  display: block;
+}
+
+.details-grid small {
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.details-grid strong {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .panel {
+    padding: 24px 18px;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+}
